@@ -1,0 +1,7 @@
+option echo off
+option batch on
+option confirm off
+open sftp://root:dreamtheater@195.161.41.30:49425/ -hostkey="ssh-rsa 2048 jaZb3nn7nxQroCed2iprxazFFRkvycHtiIxajbD6Z9M="
+lcd "C:\"
+put -nopermissions -nopreservetime "C:\yii2shop-react\build\*" "/var/www/html/yii2shop-react/"
+exit
